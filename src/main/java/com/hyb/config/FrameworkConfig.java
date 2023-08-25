@@ -1,7 +1,9 @@
 package com.hyb.config;
 
 import com.hyb.config.converters.StringToBrowserTypeConverter;
-import enums.BrowserType;
+import com.hyb.enums.BrowserRemoteModeType;
+import com.hyb.enums.BrowserType;
+import com.hyb.enums.RunModeBrowserType;
 import org.aeonbits.owner.Config;
 
 @Config.LoadPolicy(Config.LoadType.MERGE)
@@ -14,4 +16,12 @@ public interface FrameworkConfig extends Config {
     @DefaultValue("CHROME")
     @ConverterClass(StringToBrowserTypeConverter.class)
     BrowserType browser();
+
+    @Key("runModeBrowser")
+    RunModeBrowserType browserRunMode();
+
+    @Key("browserRemoteMode")
+    BrowserRemoteModeType browserRemoteModeType();
+
+
 }

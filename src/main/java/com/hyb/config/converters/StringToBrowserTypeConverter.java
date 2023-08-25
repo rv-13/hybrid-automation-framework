@@ -1,6 +1,6 @@
 package com.hyb.config.converters;
 
-import enums.BrowserType;
+import com.hyb.enums.BrowserType;
 import org.aeonbits.owner.Converter;
 
 import java.lang.reflect.Method;
