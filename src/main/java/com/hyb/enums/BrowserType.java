@@ -1,4 +1,4 @@
-package enums;
+package com.hyb.enums;
 
 public enum BrowserType {
     CHROME,
