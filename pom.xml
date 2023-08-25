@@ -28,6 +28,7 @@
         <fixture.factory.version>3.1.0</fixture.factory.version>
         <reflection.version>0.10.2</reflection.version>
         <junit.jupiter.version>5.8.2</junit.jupiter.version>
+        <testng.version>7.8.0</testng.version>
     </properties>
     <dependencies>
         <dependency>
@@ -125,6 +126,13 @@
             <groupId>com.github.javafaker</groupId>
             <artifactId>javafaker</artifactId>
             <version>${javafaker.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+            <scope>compile
+            </scope>
         </dependency>
     </dependencies>
 
