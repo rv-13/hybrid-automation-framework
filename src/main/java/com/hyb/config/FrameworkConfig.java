@@ -1,10 +1,13 @@
 package com.hyb.config;
 
 import com.hyb.config.converters.StringToBrowserTypeConverter;
+import com.hyb.config.converters.StringToURLConverter;
 import com.hyb.enums.BrowserRemoteModeType;
 import com.hyb.enums.BrowserType;
 import com.hyb.enums.RunModeBrowserType;
 import org.aeonbits.owner.Config;
+
+import java.net.URL;
 
 @Config.LoadPolicy(Config.LoadType.MERGE)
 @Config.Sources({
@@ -22,6 +25,13 @@ public interface FrameworkConfig extends Config {
 
     @Key("browserRemoteMode")
     BrowserRemoteModeType browserRemoteModeType();
+
+    @ConverterClass(StringToURLConverter.class)
+    URL seleniumGridURL();
+
+    @ConverterClass(StringToURLConverter.class)
+    URL selenoidURL();
+
 
 
 }
