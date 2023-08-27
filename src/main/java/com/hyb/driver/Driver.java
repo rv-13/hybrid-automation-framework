@@ -1,7 +1,7 @@
 package com.hyb.driver;
 
 import com.hyb.config.factory.ConfigFactory;
-import com.hyb.driver.web.local.LocalDriverFactory;
+import com.hyb.driver.factory.web.local.LocalDriverFactory;
 import org.openqa.selenium.WebDriver;
 
 public final class Driver {
