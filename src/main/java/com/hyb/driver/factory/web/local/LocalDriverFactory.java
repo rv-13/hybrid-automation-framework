@@ -1,4 +1,4 @@
-package com.hyb.driver.web.local;
+package com.hyb.driver.factory.web.local;
 
 import com.hyb.driver.manager.web.local.ChromeManager;
 import com.hyb.driver.manager.web.local.FireFoxManager;
