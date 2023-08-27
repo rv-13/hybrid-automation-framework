@@ -1,7 +1,6 @@
 package com.hyb.config;
 
-import com.hyb.config.converters.StringToBrowserTypeConverter;
-import com.hyb.config.converters.StringToURLConverter;
+import com.hyb.config.converters.*;
 import com.hyb.enums.BrowserRemoteModeType;
 import com.hyb.enums.BrowserType;
 import com.hyb.enums.RunModeBrowserType;
@@ -21,10 +20,20 @@ public interface FrameworkConfig extends Config {
     BrowserType browser();
 
     @Key("runModeBrowser")
+    @ConverterClass(StringToRunModeBrowserTypeConverter.class)
     RunModeBrowserType browserRunMode();
 
     @Key("browserRemoteMode")
+    @ConverterClass(StringToRemoteModeBrowserTypeConverter.class)
     BrowserRemoteModeType browserRemoteModeType();
+
+    @Key("runModeMobile")
+    @ConverterClass(StringToRunModeBrowserTypeConverter.class)
+    RunModeBrowserType mobileRunMode();
+
+    @Key("mobileRemoteMode")
+    @ConverterClass(StringToRemoteModeBrowserTypeConverter.class)
+    BrowserRemoteModeType mobileRemoteMode();
 
     @ConverterClass(StringToURLConverter.class)
     URL seleniumGridURL();
@@ -32,6 +41,8 @@ public interface FrameworkConfig extends Config {
     @ConverterClass(StringToURLConverter.class)
     URL selenoidURL();
 
-
+    @ConverterClass(StringToURLConverter.class)
+    @DefaultValue("http://127.0.0.1:4723/wd/hub")
+    URL localAppiumServerURL();
 
 }
