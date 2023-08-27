@@ -1,4 +1,4 @@
-package com.hyb.driver.web.remote;
+package com.hyb.driver.factory.web.remote;
 
 import com.hyb.enums.BrowserRemoteModeType;
 import com.hyb.enums.BrowserType;

@@ -1,4 +1,4 @@
-package com.hyb.driver.web.remote;
+package com.hyb.driver.factory.web.remote;
 
 import com.hyb.driver.manager.web.remote.browserstack.BrowserStackChromeManager;
 import com.hyb.driver.manager.web.remote.browserstack.BrowserStackFirefoxManager;
