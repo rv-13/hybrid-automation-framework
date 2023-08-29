@@ -3,7 +3,7 @@ package com.hyb.config;
 import com.hyb.config.converters.*;
 import com.hyb.enums.BrowserRemoteModeType;
 import com.hyb.enums.BrowserType;
-import com.hyb.enums.RunModeBrowserType;
+import com.hyb.enums.RunModeType;
 import org.aeonbits.owner.Config;
 
 import java.net.URL;
@@ -21,7 +21,7 @@ public interface FrameworkConfig extends Config {
 
     @Key("runModeBrowser")
     @ConverterClass(StringToRunModeBrowserTypeConverter.class)
-    RunModeBrowserType browserRunMode();
+    RunModeType browserRunMode();
 
     @Key("browserRemoteMode")
     @ConverterClass(StringToRemoteModeBrowserTypeConverter.class)
@@ -29,7 +29,7 @@ public interface FrameworkConfig extends Config {
 
     @Key("runModeMobile")
     @ConverterClass(StringToRunModeBrowserTypeConverter.class)
-    RunModeBrowserType mobileRunMode();
+    RunModeType mobileRunMode();
 
     @Key("mobileRemoteMode")
     @ConverterClass(StringToRemoteModeBrowserTypeConverter.class)

@@ -1,7 +1,6 @@
 package com.hyb.config.converters;
 
 import com.hyb.enums.BrowserRemoteModeType;
-import com.hyb.enums.RunModeBrowserType;
 import org.aeonbits.owner.Converter;
 
 import java.lang.reflect.Method;
